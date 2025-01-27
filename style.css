@@ -1,0 +1,59 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: linear-gradient(135deg, #89f7fe, #66a6ff); /* Stylish background */
+  font-family: Arial, sans-serif;
+}
+
+.ball {
+  width: 60px; /* Slightly larger ball */
+  height: 60px;
+  background: radial-gradient(circle, #ff6f61, #ff1e00); /* Gradient for depth */
+  border-radius: 50%;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Adds shadow for depth */
+  position: relative;
+  animation: bounce 2s infinite;
+}
+
+.ball1{
+  width:100px;
+  height: 100px;
+  background: deeppink;
+  border-radius: 50%;
+  position: relative;
+  animation:  bounce 3s infinite;
+}
+
+.ball2{ 
+  width: 20px;
+  height: 20px;
+  background:black;
+  border-radius: 50%;
+  position: relative;
+  animation: bounce 6s infinite;
+}
+
+.ball3{
+  width: 75px;
+  height: 75px;
+  background: orangered;
+box-shadow: 0 11px 20px rgba(0, 1, 0, 0.5);
+  border-radius: 50%;
+animation: bounce 2s infinite;
+
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    transform: translateY(-120px); /* Higher bounce */
+    box-shadow: 0 30px 15px rgba(0, 0, 0, 0.2); /* Adjust shadow during bounce */
+  }
+}
+
